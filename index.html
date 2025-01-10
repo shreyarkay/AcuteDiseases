@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<div class="jumbotron">
+
+<form action="/submit-heart-data" method="post">
+    <input type="text" id="heart-age" placeholder="Age" required>
+    <input type="text" id="heart-gender" placeholder="Gender" required>
+    <input type="text" id="heart-cholesterol" placeholder="Cholesterol Level" required>
+    <button type="submit">Submit Heart Data</button>
+</form>
+
+<form action="/submit-diabetes-data" method="post">
+    <input type="text" id="diabetes-age" placeholder="Age" required>
+    <input type="text" id="diabetes-gender" placeholder="Gender" required>
+    <input type="text" id="diabetes-glucose" placeholder="Glucose Level" required>
+    <button type="submit">Submit Diabetes Data</button>
+</form>
+
+<form action="/submit-parkinsons-data" method="post">
+    <input type="text" id="parkinsons-age" placeholder="Age" required>
+    <input type="text" id="parkinsons-gender" placeholder="Gender" required>
+    <input type="text" id="parkinsons-symptoms" placeholder="Symptoms" required>
+    <button type="submit">Submit Parkinson's Data</button>
+</form>
+    </div>
+{% endblock %}
