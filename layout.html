@@ -1,0 +1,717 @@
+<!--<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>
+        Doctor App
+    </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet" />
+</head>
+<body class="font-roboto bg-gray-100">
+    <header class="bg-blue-600 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">
+                Doctor App
+            </h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li>
+                        <a class="hover:underline" href="#home">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a class="hover:underline" href="#heart-disease">
+                            Heart Disease
+                        </a>
+                    </li>
+                    <li>
+                        <a class="hover:underline" href="#diabetes">
+                            Diabetes
+                        </a>
+                    </li>
+                    <li>
+                        <a class="hover:underline" href="#parkinsons">
+                            Parkinson's
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="container mx-auto p-4">
+        <section class="my-8" id="home">
+            <h2 class="text-3xl font-bold mb-4">
+                Welcome to Doctor App
+            </h2>
+            <p class="mb-4">
+                This app helps you find patients with heart disease, diabetes, and Parkinson's disease, and provides prevention methods for these conditions.
+            </p>
+            <img alt="A doctor holding a stethoscope and smiling at the camera" class="w-full h-auto rounded-lg shadow-md" height="40" src="https://images.everydayhealth.com/images/healthy-living/ces-trends-to-watch-2022-1440x810.jpg" width="60" />
+        </section>
+        <section class="my-8" id="heart-disease">
+            <h2 class="text-3xl font-bold mb-4">
+                Heart Disease
+            </h2>
+            <p class="mb-4">
+                Heart disease describes a range of conditions that affect your heart. Prevention methods include maintaining a healthy diet, regular exercise, and avoiding smoking.
+            </p>
+            <img alt="Illustration of a human heart with arteries and veins" class="w-full h-auto rounded-lg shadow-md" height="40" src="https://img.freepik.com/free-photo/person-holding-anatomic-heart-model-educational-purpose_23-2149894464.jpg?t=st=1734613989~exp=1734617589~hmac=3ca89896449c589425537f0f54d630647e299dddd2bacd9be77306924db67daa&w=996" width="60" />
+            <form class="bg-white p-4 rounded-lg shadow-md mt-4">
+                <h3 class="text-xl font-bold mb-4">
+                    Enter Patient Data
+                </h3>
+                <div class="mb-4">
+                    <label class="block text-gray-700" for="heart-age">
+                        Age
+                    </label>
+                    <input class="w-full p-2 border border-gray-300 rounded mt-1" id="heart-age" name="heart-age" type="number" />
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700" for="heart-gender">
+                        Gender
+                    </label>
+                    <select class="w-full p-2 border border-gray-300 rounded mt-1" id="heart-gender" name="heart-gender">
+                        <option value="male">
+                            Male
+                        </option>
+                        <option value="female">
+                            Female
+                        </option>
+                    </select>
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700" for="heart-cholesterol">
+                        Cholesterol Level
+                    </label>
+                    <input class="w-full p-2 border border-gray-300 rounded mt-1" id="heart-cholesterol" name="heart-cholesterol" type="number" />
+                </div>
+                <div class="flex space-x-4">
+                    <button class="bg-blue-600 text-white px-4 py-2 rounded" type="submit">
+                        Submit
+                    </button>
+                    <button class="bg-gray-600 text-white px-4 py-2 rounded" type="reset">
+                        Reset
+                    </button>
+                </div>
+            </form>
+        </section>
+        <section class="my-8" id="diabetes">
+            <h2 class="text-3xl font-bold mb-4">
+                Diabetes
+            </h2>
+            <p class="mb-4">
+                Diabetes is a chronic condition that affects how your body turns food into energy. Prevention methods include maintaining a healthy weight, eating a balanced diet, and regular physical activity.
+            </p>
+            <img alt="Illustration of a glucose meter and insulin syringe" class="w-full h-auto rounded-lg shadow-md" height="40" src="https://www.iaea.org/sites/default/files/styles/original_image_size/public/diabetes.jpg?itok=PYMvEH1F" width="60" />
+            <form class="bg-white p-4 rounded-lg shadow-md mt-4">
+                <h3 class="text-xl font-bold mb-4">
+                    Enter Patient Data
+                </h3>
+                <div class="mb-4">
+                    <label class="block text-gray-700" for="diabetes-age">
+                        Age
+                    </label>
+                    <input class="w-full p-2 border border-gray-300 rounded mt-1" id="diabetes-age" name="diabetes-age" type="number" />
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700" for="diabetes-gender">
+                        Gender
+                    </label>
+                    <select class="w-full p-2 border border-gray-300 rounded mt-1" id="diabetes-gender" name="diabetes-gender">
+                        <option value="male">
+                            Male
+                        </option>
+                        <option value="female">
+                            Female
+                        </option>
+                    </select>
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700" for="diabetes-glucose">
+                        Glucose Level
+                    </label>
+                    <input class="w-full p-2 border border-gray-300 rounded mt-1" id="diabetes-glucose" name="diabetes-glucose" type="number" />
+                </div>
+                <div class="flex space-x-4">
+                    <button class="bg-blue-600 text-white px-4 py-2 rounded" type="submit">
+                        Submit
+                    </button>
+                    <button class="bg-gray-600 text-white px-4 py-2 rounded" type="reset">
+                        Reset
+                    </button>
+                </div>
+            </form>
+        </section>
+        <section class="my-8" id="parkinsons">
+            <h2 class="text-3xl font-bold mb-4">
+                Parkinson's Disease
+            </h2>
+            <p class="mb-4">
+                Parkinson's disease is a progressive nervous system disorder that affects movement. While there is no known prevention, maintaining a healthy lifestyle can help manage symptoms.
+            </p>
+            <img alt="Illustration of a brain with highlighted areas affected by Parkinson's disease" class="w-full h-auto rounded-lg shadow-md" height="40" src="http://i.pinimg.com/736x/b9/17/25/b917259725eae16bad12d5d88bb78227.jpg" width="60" />
+            <form class="bg-white p-4 rounded-lg shadow-md mt-4">
+                <h3 class="text-xl font-bold mb-4">
+                    Enter Patient Data
+                </h3>
+                <div class="mb-4">
+                    <label class="block text-gray-700" for="parkinsons-age">
+                        Age
+                    </label>
+                    <input class="w-full p-2 border border-gray-300 rounded mt-1" id="parkinsons-age" name="parkinsons-age" type="number" />
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700" for="parkinsons-gender">
+                        Gender
+                    </label>
+                    <select class="w-full p-2 border border-gray-300 rounded mt-1" id="parkinsons-gender" name="parkinsons-gender">
+                        <option value="male">
+                            Male
+                        </option>
+                        <option value="female">
+                            Female
+                        </option>
+                    </select>
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700" for="parkinsons-symptoms">
+                        Symptoms
+                    </label>
+                    <input class="w-full p-2 border border-gray-300 rounded mt-1" id="parkinsons-symptoms" name="parkinsons-symptoms" type="text" />
+                </div>
+                <div class="flex space-x-4">
+                    <button class="bg-blue-600 text-white px-4 py-2 rounded" type="submit">
+                        Submit
+                    </button>
+                    <button class="bg-gray-600 text-white px-4 py-2 rounded" type="reset">
+                        Reset
+                    </button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer class="bg-blue-600 text-white p-4">
+        <div class="container mx-auto text-center">
+            <p>
+                © 2023 Doctor App. All rights reserved.
+            </p>
+            <a class="bg-white text-blue-600 px-4 py-2 rounded mt-4 inline-block" href="#home">
+                Back to Home
+            </a>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Heart Disease Form Submission
+            const heartForm = document.querySelector('form[action="/submit-heart-data"]');
+            heartForm.addEventListener('submit', function (event) {
+                event.preventDefault(); // Prevent the default form submission
+
+                const formData = {
+                    age: document.getElementById('heart-age').value,
+                    gender: document.getElementById('heart-gender').value,
+                    cholesterol: document.getElementById('heart-cholesterol').value
+                };
+
+                fetch('/submit-heart-data', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(formData)
+                })
+                    .then(response => response.json())
+                    .then(data => {
+                        alert(data.message); // Show success message
+                        heartForm.reset(); // Reset the form
+                    })
+                    .catch(error => {
+                        console.error('Error:', error);
+                        alert('An error occurred while submitting the form.');
+                    });
+            });
+
+            // Diabetes Form Submission
+            const diabetesForm = document.querySelector('form[action="/submit-diabetes-data"]');
+            diabetesForm.addEventListener('submit', function (event) {
+                event.preventDefault();
+
+                const formData = {
+                    age: document.getElementById('diabetes-age').value,
+                    gender: document.getElementById('diabetes-gender').value,
+                    glucose: document.getElementById('diabetes-glucose').value
+                };
+
+                fetch('/submit-diabetes-data', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(formData)
+                })
+                    .then(response => response.json())
+                    .then(data => {
+                        alert(data.message);
+                        diabetesForm.reset();
+                    })
+                    .catch(error => {
+                        console.error('Error:', error);
+                        alert('An error occurred while submitting the form.');
+                    });
+            });
+
+            // Parkinson's Form Submission
+            const parkinsonsForm = document.querySelector('form[action="/submit-parkinsons-data"]');
+            parkinsonsForm.addEventListener('submit', function (event) {
+                event.preventDefault();
+
+                const formData = {
+                    age: document.getElementById('parkinsons-age').value,
+                    gender: document.getElementById('parkinsons-gender').value,
+                    symptoms: document.getElementById('parkinsons-symptoms').value
+                };
+
+                fetch('/submit-parkinsons-data', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(formData)
+                })
+                    .then(response => response.json())
+                    .then(data => {
+                        alert(data.message);
+                        parkinsonsForm.reset();
+                    })
+                    .catch(error => {
+                        console.error('Error:', error);
+                        alert('An error occurred while submitting the form.');
+                    });
+            });
+        });
+    </script>
+</body>
+</html>-->
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Combined Disease Input Form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body class="font-roboto bg-gray-100">
+    <!-- Header 
+<header class="bg-blue-600 text-white p-4">
+    <div class="container mx-auto flex justify-between items-center">
+        <h1 class="text-2xl font-bold">Doctor App</h1>
+        <nav>
+            <ul class="flex space-x-4">
+                <li><a class="hover:underline" href="#home">Home</a></li>
+                <li><a class="hover:underline" href="#form-section">Patient Input Form</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- Main Content
+    <main class="container mx-auto p-4">
+        <!-- Home Section
+        <section class="my-8" id="home">
+            <h2 class="text-3xl font-bold mb-4">Welcome to Doctor App</h2>
+            <p class="mb-4">This app helps identify patients with Heart Disease, Diabetes, and Parkinson's Disease.</p>
+            <img alt="Doctor holding a stethoscope" class="w-full h-auto rounded-lg shadow-md"
+                 src="https://images.everydayhealth.com/images/healthy-living/ces-trends-to-watch-2022-1440x810.jpg" />
+        </section>
+
+        <!-- Combined Input Form
+        <section class="my-8" id="form-section">
+            <h2 class="text-3xl font-bold mb-4">Patient Input Form</h2>
+            <p class="mb-4">Fill in the following details to assess the health condition.</p>
+
+            <form id="disease-form" class="bg-white p-4 rounded-lg shadow-md">
+                <!-- User Inputs
+                <label class="block text-gray-700 mb-2" for="age">Age</label>
+                <input id="age" name="age" class="w-full p-2 border rounded" type="number" required min="1" placeholder="Enter age" />
+
+                <label class="block text-gray-700 mt-4 mb-2" for="gender">Gender</label>
+                <select id="gender" name="gender" class="w-full p-2 border rounded" required>
+                    <option value="" disabled selected>Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+
+                <label class="block text-gray-700 mt-4 mb-2" for="cholesterol">Cholesterol Level</label>
+                <input id="cholesterol" name="cholesterol" class="w-full p-2 border rounded" type="number" min="0" placeholder="Enter cholesterol level" />
+
+                <label class="block text-gray-700 mt-4 mb-2" for="glucose">Glucose Level</label>
+                <input id="glucose" name="glucose" class="w-full p-2 border rounded" type="number" min="0" placeholder="Enter glucose level" />
+
+                <label class="block text-gray-700 mt-4 mb-2" for="symptoms">Symptoms</label>
+                <input id="symptoms" name="symptoms" class="w-full p-2 border rounded" type="text" placeholder="List major symptoms" />
+
+                <label class="block text-gray-700 mt-4 mb-2" for="disease-type">Disease Type</label>
+                <select id="disease-type" name="disease" class="w-full p-2 border rounded" required>
+                    <option value="" disabled selected>Select Disease Type</option>
+                    <option value="heart-disease">Heart Disease</option>
+                    <option value="diabetes">Diabetes</option>
+                    <option value="parkinsons">Parkinson's Disease</option>
+                </select>
+
+                <!-- Message Display
+                <div id="form-message" class="text-red-500 mt-4"></div>
+
+                <!-- Submit Button
+                <button class="bg-blue-600 text-white px-4 py-2 rounded mt-4 w-full" type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer
+    <footer class="bg-blue-600 text-white p-4 text-center">
+        <p>© 2023 Doctor App. All rights reserved.</p>
+        <a class="bg-white text-blue-600 px-4 py-2 rounded inline-block mt-4" href="#home">Back to Home</a>
+    </footer>
+
+    <!-- JavaScript
+    <script>
+        document.getElementById("disease-form").addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            // Collect form inputs
+            const age = document.getElementById("age").value;
+            const gender = document.getElementById("gender").value;
+            const cholesterol = document.getElementById("cholesterol").value;
+            const glucose = document.getElementById("glucose").value;
+            const symptoms = document.getElementById("symptoms").value;
+            const diseaseType = document.getElementById("disease-type").value;
+
+            const message = document.getElementById("form-message");
+
+            // Validate inputs
+            if (!age || !gender || !diseaseType) {
+                message.className = "text-red-500 mt-4";
+                message.textContent = "Please fill in all the required fields.";
+                return;
+            }
+
+            // Prepare data
+            const requestData = {
+                age: parseInt(age),
+                gender: gender,
+                cholesterol: cholesterol ? parseInt(cholesterol) : "N/A",
+                glucose: glucose ? parseInt(glucose) : "N/A",
+                symptoms: symptoms || "N/A",
+                diseaseType: diseaseType,
+            };
+
+            // Simulate data submission
+            console.log("Form Data:", requestData);
+            message.className = "text-green-500 mt-4";
+            message.textContent = "Data submitted successfully!";
+        });
+    </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Doctor App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body class="font-roboto bg-gray-100">
+    <header class="bg-blue-600 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Doctor App</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a class="hover:underline" href="#heart-disease">Heart Disease</a></li>
+                    <li><a class="hover:underline" href="#diabetes">Diabetes</a></li>
+                    <li><a class="hover:underline" href="#parkinsons">Parkinson's</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto p-4">
+        <!-- Heart Disease Section
+        <section id="heart-disease" class="my-8">
+            <h2 class="text-3xl font-bold mb-4">Heart Disease</h2>
+            <form id="heart-form" class="bg-white p-4 rounded-lg shadow-md">
+                <h3 class="text-xl font-bold mb-4">Enter Patient Data</h3>
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <label for="age" class="block text-gray-700">Age</label>
+                        <input id="age" name="age" type="number" class="w-full p-2 border border-gray-300 rounded mt-1" required />
+                    </div>
+                    <div>
+                        <label for="sex" class="block text-gray-700">Sex</label>
+                        <select id="sex" name="sex" class="w-full p-2 border border-gray-300 rounded mt-1" required>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="cp" class="block text-gray-700">Chest Pain Type</label>
+                        <input id="cp" name="cp" type="number" class="w-full p-2 border border-gray-300 rounded mt-1" required />
+                    </div>
+                    <div>
+                        <label for="trestbps" class="block text-gray-700">Resting Blood Pressure</label>
+                        <input id="trestbps" name="trestbps" type="number" class="w-full p-2 border border-gray-300 rounded mt-1" required />
+                    </div>
+                    <div>
+                        <label for="chol" class="block text-gray-700">Cholesterol</label>
+                        <input id="chol" name="chol" type="number" class="w-full p-2 border border-gray-300 rounded mt-1" required />
+                    </div>
+                    <div>
+                        <label for="fbs" class="block text-gray-700">Fasting Blood Sugar</label>
+                        <input id="fbs" name="fbs" type="number" class="w-full p-2 border border-gray-300 rounded mt-1" required />
+                    </div>
+                </div>
+                <button type="submit" class="mt-4 bg-blue-600 text-white px-4 py-2 rounded">Submit</button>
+            </form>
+            <div id="heart-output" class="hidden mt-6 bg-gray-100 p-4 rounded-lg shadow-md">
+                <h3 class="text-xl font-bold mb-4">Submitted Data</h3>
+                <div id="heart-data"></div>
+            </div>
+        </section>
+
+        <!-- Diabetes Section
+        <section id="diabetes" class="my-8">
+            <h2 class="text-3xl font-bold mb-4">Diabetes</h2>
+            <form id="diabetes-form" class="bg-white p-4 rounded-lg shadow-md">
+                <h3 class="text-xl font-bold mb-4">Enter Patient Data</h3>
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <label for="pregnancies" class="block text-gray-700">Pregnancies</label>
+                        <input id="pregnancies" name="pregnancies" type="number" class="w-full p-2 border border-gray-300 rounded mt-1" required />
+                    </div>
+                    <div>
+                        <label for="glucose" class="block text-gray-700">Glucose Level</label>
+                        <input id="glucose" name="glucose" type="number" class="w-full p-2 border border-gray-300 rounded mt-1" required />
+                    </div>
+                    <div>
+                        <label for="bloodpressure" class="block text-gray-700">Blood Pressure</label>
+                        <input id="bloodpressure" name="bloodpressure" type="number" class="w-full p-2 border border-gray-300 rounded mt-1" required />
+                    </div>
+                    <div>
+                        <label for="bmi" class="block text-gray-700">BMI</label>
+                        <input id="bmi" name="bmi" type="number" step="0.1" class="w-full p-2 border border-gray-300 rounded mt-1" required />
+                    </div>
+                </div>
+                <button type="submit" class="mt-4 bg-blue-600 text-white px-4 py-2 rounded">Submit</button>
+            </form>
+            <div id="diabetes-output" class="hidden mt-6 bg-gray-100 p-4 rounded-lg shadow-md">
+                <h3 class="text-xl font-bold mb-4">Submitted Data</h3>
+                <div id="diabetes-data"></div>
+            </div>
+        </section>
+
+        <!-- Parkinson's Section
+        <section id="parkinsons" class="my-8">
+            <h2 class="text-3xl font-bold mb-4">Parkinson's Disease</h2>
+            <form id="parkinsons-form" class="bg-white p-4 rounded-lg shadow-md">
+                <h3 class="text-xl font-bold mb-4">Enter Patient Data</h3>
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <label for="MDVP_FoHz" class="block text-gray-700">MDVP:Fo(Hz)</label>
+                        <input id="MDVP_FoHz" name="MDVP_FoHz" type="number" step="0.1" class="w-full p-2 border border-gray-300 rounded mt-1" required />
+                    </div>
+                    <div>
+                        <label for="MDVP_FhiHz" class="block text-gray-700">MDVP:Fhi(Hz)</label>
+                        <input id="MDVP_FhiHz" name="MDVP_FhiHz" type="number" step="0.1" class="w-full p-2 border border-gray-300 rounded mt-1" required />
+                    </div>
+                </div>
+                <button type="submit" class="mt-4 bg-blue-600 text-white px-4 py-2 rounded">Submit</button>
+            </form>
+            <div id="parkinsons-output" class="hidden mt-6 bg-gray-100 p-4 rounded-lg shadow-md">
+                <h3 class="text-xl font-bold mb-4">Submitted Data</h3>
+                <div id="parkinsons-data"></div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function handleFormSubmission(formId, outputId, dataContainerId) {
+            const form = document.getElementById(formId);
+            const output = document.getElementById(outputId);
+            const dataContainer = document.getElementById(dataContainerId);
+
+            form.addEventListener("submit", (event) => {
+                event.preventDefault();
+                const formData = new FormData(form);
+                const dataHtml = Array.from(formData.entries())
+                    .map(([key, value]) => `<p><strong>${key}:</strong> ${value}</p>`)
+                    .join("");
+                dataContainer.innerHTML = dataHtml;
+                output.classList.remove("hidden");
+            });
+        }
+
+        handleFormSubmission("heart-form", "heart-output", "heart-data");
+        handleFormSubmission("diabetes-form", "diabetes-output", "diabetes-data");
+        handleFormSubmission("parkinsons-form", "parkinsons-output", "parkinsons-data");
+    </script>
+</body>
+</html>-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Doctor App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body class="font-roboto bg-gray-100">
+    <header class="bg-blue-600 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Doctor App</h1>
+            <img src="https://images.everydayhealth.com/images/healthy-living/ces-trends-to-watch-2022-1440x810.jpg"
+                 alt="Health Trends"
+                 class="mt-4 w-full max-w-3xl rounded-lg shadow-lg" />
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a class="hover:underline" href="#heart-disease">Heart Disease</a></li>
+                    <li><a class="hover:underline" href="#diabetes">Diabetes</a></li>
+                    <li><a class="hover:underline" href="#parkinsons">Parkinson's</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto p-4">
+        <!-- Heart Disease Section -->
+        <section id="heart-disease" class="my-8">
+            <h2 class="text-3xl font-bold mb-4">Heart Disease</h2>
+            <form id="heart-form" class="bg-white p-4 rounded-lg shadow-md">
+                <h3 class="text-xl font-bold mb-4">Enter Patient Data</h3>
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <label for="age" class="block text-gray-700">Age</label>
+                        <input id="age" name="age" type="number" class="w-full p-2 border border-gray-300 rounded mt-1" required />
+                    </div>
+                    <div>
+                        <label for="chol" class="block text-gray-700">Cholesterol</label>
+                        <input id="chol" name="chol" type="number" class="w-full p-2 border border-gray-300 rounded mt-1" required />
+                    </div>
+                    <div>
+                        <label for="trestbps" class="block text-gray-700">Resting Blood Pressure</label>
+                        <input id="trestbps" name="trestbps" type="number" class="w-full p-2 border border-gray-300 rounded mt-1" required />
+                    </div>
+                    <div>
+                        <label for="thalach" class="block text-gray-700">Maximum Heart Rate</label>
+                        <input id="thalach" name="thalach" type="number" class="w-full p-2 border border-gray-300 rounded mt-1" required />
+                    </div>
+                </div>
+                <button type="submit" class="mt-4 bg-blue-600 text-white px-4 py-2 rounded">Submit</button>
+            </form>
+            <div id="heart-output" class="hidden mt-6 bg-gray-100 p-4 rounded-lg shadow-md">
+                <h3 class="text-xl font-bold mb-4">Heart Disease Diagnosis</h3>
+                <div id="heart-data"></div>
+                <p id="heart-diagnosis" class="font-bold text-red-500"></p>
+            </div>
+        </section>
+
+        <!-- Diabetes Section -->
+        <section id="diabetes" class="my-8">
+            <h2 class="text-3xl font-bold mb-4">Diabetes</h2>
+            <form id="diabetes-form" class="bg-white p-4 rounded-lg shadow-md">
+                <h3 class="text-xl font-bold mb-4">Enter Patient Data</h3>
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <label for="glucose" class="block text-gray-700">Glucose Level</label>
+                        <input id="glucose" name="glucose" type="number" class="w-full p-2 border border-gray-300 rounded mt-1" required />
+                    </div>
+                    <div>
+                        <label for="bmi" class="block text-gray-700">BMI</label>
+                        <input id="bmi" name="bmi" type="number" step="0.1" class="w-full p-2 border border-gray-300 rounded mt-1" required />
+                    </div>
+                </div>
+                <button type="submit" class="mt-4 bg-blue-600 text-white px-4 py-2 rounded">Submit</button>
+            </form>
+            <div id="diabetes-output" class="hidden mt-6 bg-gray-100 p-4 rounded-lg shadow-md">
+                <h3 class="text-xl font-bold mb-4">Diabetes Diagnosis</h3>
+                <div id="diabetes-data"></div>
+                <p id="diabetes-diagnosis" class="font-bold text-red-500"></p>
+            </div>
+        </section>
+
+        <!-- Parkinson's Section -->
+        <section id="parkinsons" class="my-8">
+            <h2 class="text-3xl font-bold mb-4">Parkinson's Disease</h2>
+            <form id="parkinsons-form" class="bg-white p-4 rounded-lg shadow-md">
+                <h3 class="text-xl font-bold mb-4">Enter Patient Data</h3>
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <label for="MDVP_FoHz" class="block text-gray-700">MDVP:Fo(Hz)</label>
+                        <input id="MDVP_FoHz" name="MDVP_FoHz" type="number" step="0.1" class="w-full p-2 border border-gray-300 rounded mt-1" required />
+                    </div>
+                </div>
+                <button type="submit" class="mt-4 bg-blue-600 text-white px-4 py-2 rounded">Submit</button>
+            </form>
+            <div id="parkinsons-output" class="hidden mt-6 bg-gray-100 p-4 rounded-lg shadow-md">
+                <h3 class="text-xl font-bold mb-4">Parkinson's Diagnosis</h3>
+                <div id="parkinsons-data"></div>
+                <p id="parkinsons-diagnosis" class="font-bold text-red-500"></p>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        function handleFormSubmission(formId, outputId, dataContainerId, diagnosisId, diseaseLogic) {
+            const form = document.getElementById(formId);
+            const output = document.getElementById(outputId);
+            const dataContainer = document.getElementById(dataContainerId);
+            const diagnosis = document.getElementById(diagnosisId);
+
+            form.addEventListener("submit", (event) => {
+                event.preventDefault();
+                const formData = new FormData(form);
+                const formObject = Object.fromEntries(formData.entries());
+                const dataHtml = Array.from(formData.entries())
+                    .map(([key, value]) => `<p><strong>${key}:</strong> ${value}</p>`)
+                    .join("");
+                dataContainer.innerHTML = dataHtml;
+                diagnosis.textContent = diseaseLogic(formObject);
+                output.classList.remove("hidden");
+            });
+        }
+
+        // Disease Logic
+        const checkDiabetes = (data) => {
+            return data.glucose > 140 || data.bmi > 30
+                ? "The patient is likely to have Diabetes."
+                : "The patient does not have Diabetes.";
+        };
+
+        const checkHeartDisease = (data) => {
+            return data.chol > 200 || data.trestbps > 120
+                ? "The patient is likely to have Heart Disease."
+                : "The patient does not have Heart Disease.";
+        };
+
+        const checkParkinsons = (data) => {
+            return data.MDVP_FoHz < 120
+                ? "The patient is likely to have Parkinson's Disease."
+                : "The patient does not have Parkinson's Disease.";
+        };
+
+        // Attach Handlers
+        handleFormSubmission("heart-form", "heart-output", "heart-data", "heart-diagnosis", checkHeartDisease);
+        handleFormSubmission("diabetes-form", "diabetes-output", "diabetes-data", "diabetes-diagnosis", checkDiabetes);
+        handleFormSubmission("parkinsons-form", "parkinsons-output", "parkinsons-data", "parkinsons-diagnosis", checkParkinsons);
+    </script>
+</body>
+</html>
